@@ -1,0 +1,42 @@
+/* Windows 8 Logo CSS adapted from http://tjrus.com/lab/windows_8 
+   Changes: Excluded Animation, Reduced Size to 28 px
+*/
+.window {
+	position: relative; 
+	width: 20px; 
+	height: 15px;
+	background: #fff;
+	-webkit-transform: perspective(40px) rotateY(-25deg);
+	   -moz-transform: perspective(40px) rotateY(-25deg);
+	    -ms-transform: perspective(40px) rotateY(-25deg);
+	     -o-transform: perspective(40px) rotateY(-25deg);
+	        transform: perspective(40px) rotateY(-25deg);
+	-webkit-animation: windows_animation 5s infinite;
+	   -moz-animation: windows_animation 5s infinite;
+	    -ms-animation: windows_animation 5s infinite;
+}
+.window::after, .window::before {
+	content: '';
+	background: #000;
+	height: 100%; width: 1px;
+	left: 50%;
+	margin-left:-0.5px;
+	top:0;
+	position: absolute;
+}
+.window::before {
+	left: 0;
+	top: 50%;
+	margin-top: -0.5px;
+	margin-left: 0;
+	height: 1px;
+	width: 100%;
+	position: absolute;
+}
+.logo_text {
+	color: #00adef;
+	line-height: 150px;
+	font-size: 130px;
+	padding-left: 20px;
+	float: left;
+}

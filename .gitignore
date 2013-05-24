@@ -1,0 +1,10 @@
+*.suo
+
+bin
+
+/packages
+
+Debug
+/ImageFlipView/App_Data/Images/BostonCityFlow.jpg
+/ImageFlipView/App_Data/Images/CostaRicanFrog.jpg
+/ImageFlipView/App_Data/Images/PensiveParakeet.jpg

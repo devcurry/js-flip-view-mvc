@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Fast 'FlipView' using KnockoutJS";
+}
+
+<div class="tablet-border">
+    <button data-bind="click: previous"
+        class="previous-button">
+        Prev
+    </button>
+    <img id="displayImage" data-bind="attr: { src: selectedImage }" class="tablet-screen" alt="Current Image" />
+    <button data-bind="click: next"
+        class="next-button">
+        Next
+    </button>
+    <div style="left: 310px; top: 6px; position: relative">
+        <div class="window"></div>
+    </div>
+</div>
+
+<div class="form">
+    <input type="checkbox" id="auto" data-bind="checked: auto" />
+    Slide Show
+</div>
+
+@section Scripts{
+    <script src="~/Scripts/knockout-2.2.0.debug.js"></script>
+    <script src="~/Scripts/flip-viewer.js"></script>
+}
